@@ -1,0 +1,9 @@
+== Integration Demos Application
+
+This application consists of a collection of small demos illustrating how to integrate your app with several cloud-based services.  Demos of the following services will be included:
+
+* Docusign
+* Box
+* Google Drive
+* SalesForce.com
+
