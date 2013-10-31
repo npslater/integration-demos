@@ -13,7 +13,7 @@ class EventProcessingActivities
   end
 
   def fetch_data_activity(message)
-    RestClient.get JSON.parse(message)['get_url'] do | response, request, result|
+    RestClient.get JSON.parse(message)['payload']['resource']['get_url'] do | response, request, result|
       json = response.body
       "#{json}"
     end
