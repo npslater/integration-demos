@@ -8,17 +8,11 @@ class ServiceBusClientSpec
       { :event_url => AppConfig.servicebus['event_url'] }
     }
 
-    let(:event) {
-      {
-          :type => 'IntegrationDemos::Events::PurchaseOrderStatusChange',
-          :payload => {
-            :status => 'New'
-          },
-          :resource =>
-          'IntegrationDemos::Resources::PurchaseOrder',
-          :id => '1',
-          :get_url => 'http://localhost:3000/purchase_orders/1.json'
-      }
+    let(:event) { Event.new('IntegrationDemos::Events::PurchaseOrderSaved',
+                            Resource.new('IntegrationDemos::Resources::PurchaseOrder',
+                                         '1',
+                                         'http://localhost:3000/purchase_orders/1.json',
+                                         'http://localhost:3000/purchase_orders'))
     }
 
     it "should take a hash of options and return an instance of ServiceBusClient" do
@@ -26,7 +20,7 @@ class ServiceBusClientSpec
       client.should be_an_instance_of(ServiceBusClient)
     end
 
-    it "should set the event_url property during intialization" do
+    it 'should set the event_url property during initialization' do
 
       client = ServiceBusClient.new(options)
       client.event_url.should equal AppConfig.servicebus['event_url']
@@ -37,7 +31,6 @@ class ServiceBusClientSpec
       client = ServiceBusClient.new(options)
       client.send_event(event)
     end
-
   end
 
 end
