@@ -1,4 +1,4 @@
-DocuSignDemo::Application.routes.draw do
+IntegrationDemo::Application.routes.draw do
 
   resources :line_items
 
