@@ -6,7 +6,7 @@ describe DomainHelper do
   let(:swf) { AWS::SimpleWorkflow.new }
 
   it 'should return an instance of AWS::SimpleWorkflow::Domain' do
-    domain = DomainHelper.init_domain(swf, config['domain'])
+    domain = DomainHelper.init_domain(swf, config['swf']['domain'])
     domain.should be_an_instance_of(AWS::SimpleWorkflow::Domain)
   end
 end
@@ -15,7 +15,7 @@ describe EventProcessingActivities do
 
   let(:config) { YAML.load(File.read(File.join(File.dirname(__FILE__), 'config.yml'))) }
   let(:swf) { AWS::SimpleWorkflow.new }
-  let(:domain) { DomainHelper.init_domain(swf, config['domain']) }
+  let(:domain) { DomainHelper.init_domain(swf, config['swf']['domain']) }
 
   it 'should return an instance of EventProcessingActivities' do
 
@@ -25,7 +25,7 @@ describe EventProcessingActivities do
 
   it 'should be runnable as an AWS::Flow::ActivityWorker' do
 
-    activity_worker = AWS::Flow::ActivityWorker.new(swf.client, domain, config['tasklist'], EventProcessingActivities)
+    activity_worker = AWS::Flow::ActivityWorker.new(swf.client, domain, config['swf']['tasklist'], EventProcessingActivities)
     activity_worker.should be_an_instance_of(AWS::Flow::ActivityWorker)
   end
 end
@@ -34,7 +34,7 @@ describe EventProcessingWorker do
 
   let(:config) { YAML.load(File.read(File.join(File.dirname(__FILE__), 'config.yml'))) }
   let(:swf) { AWS::SimpleWorkflow.new }
-  let(:domain) { DomainHelper.init_domain(swf, config['domain']) }
+  let(:domain) { DomainHelper.init_domain(swf, config['swf']['domain']) }
 
   it 'should return an instance of EventProcessingWorker' do
     worker = EventProcessingWorker.new
@@ -42,7 +42,7 @@ describe EventProcessingWorker do
   end
 
   it 'should be runnable as an AWS::Flow::WorkflowWorker' do
-    workflow_worker = AWS::Flow::WorkflowWorker.new(swf.client, domain, config['tasklist'], EventProcessingWorker)
+    workflow_worker = AWS::Flow::WorkflowWorker.new(swf.client, domain, config['swf']['tasklist'], EventProcessingWorker)
     workflow_worker.should be_an_instance_of(AWS::Flow::WorkflowWorker)
   end
 end

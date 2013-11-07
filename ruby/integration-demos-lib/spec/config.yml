@@ -1,3 +1,20 @@
-domain: IntegrationDemos
-tasklist: integration_demos_task_list
+docusign:
+  username: <%=ENV['DOCUSIGN_USERNAME']%>
+  password: <%=ENV['DOCUSIGN_PASSWORD']%>
+  key: <%=ENV['DOCUSIGN_KEY']%>
+  login_url: https://demo.docusign.net/restapi/v2/login_information?api_password=true&include_account_id_guid=true&login_settings=all
+  return_url: http://demos.slaterwest.com/demos/docusign/embedded-signing/finish
+  templateId:  9CDC39E6-E47D-42E4-B3C0-47C4346BAEDF
+  templateRoleName: Approver
+  recipientName: John Smith
+  recipientEmail: jsmith@smith.com
+google:
+  client_id: <%=ENV['GOOGLE_CLIENT_ID']%>
+  client_secret: <%=ENV['GOOGLE_CLIENT_SECRET']%>
+  redirect_url: https://demos.slaterwest.com/oauth2/google
+servicebus:
+  event_url: http://localhost:3000/servicebus/receive-event
+swf:
+  domain: IntegrationDemos
+  tasklist: integration_demos_task_list
 

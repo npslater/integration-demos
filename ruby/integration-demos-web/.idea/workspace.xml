@@ -3,26 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="ee97853a-0b43-49ef-a928-9e8dc19e2a49" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../integration-demos-lib/integration-demos-lib-1.0.0.gem" afterPath="$PROJECT_DIR$/../integration-demos-lib/integration-demos-lib-1.0.0.gem" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/test.sqlite3" afterPath="$PROJECT_DIR$/db/test.sqlite3" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../.gitignore" afterPath="$PROJECT_DIR$/../../.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../integration-demos-lib/Gemfile.lock" afterPath="$PROJECT_DIR$/../integration-demos-lib/Gemfile.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../integration-demos-lib/Gemfile" afterPath="$PROJECT_DIR$/../integration-demos-lib/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../integration-demos-lib/.idea/IntegrationDemos-CLI.iml" afterPath="$PROJECT_DIR$/../integration-demos-lib/.idea/IntegrationDemos-CLI.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/IntegrationDemos.iml" afterPath="$PROJECT_DIR$/.idea/IntegrationDemos.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.ru" afterPath="$PROJECT_DIR$/config.ru" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../integration-demos-lib/spec/config.yml" afterPath="$PROJECT_DIR$/../integration-demos-lib/spec/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/event.rb" afterPath="$PROJECT_DIR$/app/models/event.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../integration-demos-lib/spec/event_processing_spec.rb" afterPath="$PROJECT_DIR$/../integration-demos-lib/spec/event_processing_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/lib/event_processing_workflow_spec.rb" afterPath="$PROJECT_DIR$/spec/lib/event_processing_workflow_spec.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../integration-demos-lib/integration-demos-lib.gemspec" afterPath="$PROJECT_DIR$/../integration-demos-lib/integration-demos-lib.gemspec" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/lib/service_bus_client_spec.rb" afterPath="$PROJECT_DIR$/spec/lib/service_bus_client_spec.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/service_bus_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/service_bus_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../integration-demos-lib/.idea/vcs.xml" afterPath="$PROJECT_DIR$/../integration-demos-lib/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../integration-demos-lib/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../integration-demos-lib/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="IntegrationDemos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,10 +97,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="event_processing_workflow_spec.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="event_processing_workflow_spec.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/lib/event_processing_workflow_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.ru" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/config.ru">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="14" selection-start="146" selection-end="146" vertical-scroll-proportion="0.1053719">
               <folding />
             </state>
           </provider>
@@ -148,15 +146,6 @@
         <entry file="file://$PROJECT_DIR$/lib/google_client.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="service_bus_client_spec.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/spec/lib/service_bus_client_spec.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="84" selection-start="685" selection-end="685" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -707,11 +696,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spec/lib/Test.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/sns_client.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="8" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0">
@@ -813,6 +797,13 @@
     <entry file="file://$PROJECT_DIR$/spec/lib/event_processing_workflow_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="21" selection-start="21" selection-end="21" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.ru">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="14" selection-start="146" selection-end="146" vertical-scroll-proportion="0.1053719">
           <folding />
         </state>
       </provider>
