@@ -1,6 +1,8 @@
-Gem::Specification.new do |s |
+require 'rubygems/package_task'
+
+spec = Gem::Specification.new do |s |
   s.name = 'integration-demos-lib'
-  s.version = '1.0.0'
+  s.version = File.read(File.join(File.dirname(__FILE__), 'VERSION'))
   s.date = Time.now
   s.summary = 'integration-demos-lib'
   s.description = 'Helper classes used by integration demos'
@@ -12,10 +14,23 @@ Gem::Specification.new do |s |
         lib/integration-demos/aws/swf/event_processing_activities.rb
         lib/integration-demos/aws/swf/event_processing_worker.rb
         lib/integration-demos/docusign/docusign_client.rb
-        lib/integration-demos/google/google_client.rb
-        lib/integration-demos/servicebus/service_bus_client.rb)
+        lib/integration-demos/google/google_client.rb)
   s.add_runtime_dependency 'rest-client'
   s.add_runtime_dependency 'aws-flow'
   s.add_runtime_dependency 'multipart-post'
   s.add_runtime_dependency 'google-api-client'
+end
+
+Gem::PackageTask.new(spec).define
+
+task :increment do
+  file = File.join(File.dirname(__FILE__), 'VERSION')
+  version = File.read(file)
+  tokens = version.split('.')
+  tokens[3] = tokens[3].to_i + 1
+  line = "#{tokens.join('.')}\n"
+  File.write(file, line)
+end
+
+task :install => [:increment, :package] do
 end

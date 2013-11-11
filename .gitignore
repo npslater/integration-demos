@@ -1,19 +1,19 @@
 /.bundle
-/.idea/
-/projectFilesBackup/
+/ruby/integration-demos-lib/.idea/
+/ruby/integration-demos-web/.idea/
 
-# Ignore the default SQLite database.
-/db/*.sqlite3
+/ruby/integration-demos-lib/projectFilesBackup/
+/ruby/integration-demos-web/projectFilesBackup/
 
-# Ignore all logfiles and tempfiles.
-/log/*.log
-/tmp
+/ruby/integration-demos-lib/pkg/
+
+/ruby/integration-demos-web/log/*.log
+/ruby/integration-demos-web/tmp
+/ruby/integration-demos-web/db/*.sqlite3
+/ruby/integration-demos-web/setenv*
+/ruby/integration-demos-web/bundler_stubs/
+
 *.swp
 *~
 .project
 .DS_Store
-bundler_stubs/
-setenv.*
-
-
-.elasticbeanstalk/
