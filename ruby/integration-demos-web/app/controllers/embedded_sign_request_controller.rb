@@ -1,4 +1,4 @@
-require 'docusign_client'
+require 'integration-demos/docusign/docusign_client'
 require 'json'
 
 class EmbeddedSignRequestController < ApplicationController

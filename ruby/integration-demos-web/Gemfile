@@ -7,7 +7,7 @@ gem 'rest-client', '>=1.6.7'
 gem 'multipart-post'
 gem 'google-api-client'
 gem 'aws-flow'
-gem 'integration-demos-lib', '1.0.0'
+gem 'integration-demos-lib', '1.0.0.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

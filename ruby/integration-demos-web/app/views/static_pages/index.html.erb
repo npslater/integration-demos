@@ -1,10 +1,51 @@
 <%provide(:title, "Home")%>
-<div class="page-header">
-    <h1 class="left">DocuSign <small>Working demos and example code for DocuSign integration</small></h1>
-    <h2></h2>
-</div>
-<div class="row-fluid">
-    <div class="span2"><p><a href="/demos/docusign/embedded-signing/new">Embedded Signing</a></p></div>
-    <div class="span6"><p>This demonstrates how to embed the signing of a document within
-        your own web application.  A URL for viewing and signing the document is created through calls to the DocuSign API.  This URL is sent as a redirect to the client browser.  Once the signing process is complete, the client browser is redirected back to a URL of your choosing.</p></div>
+<div class="container">
+    <div class="row-fluid">
+      <div class="span10">&nbsp;</div>
+    </div>
+  <div class="row-fluid">
+    <div class="span10">&nbsp;</div>
+  </div>
+  <div class="row-fluid">
+    <div class="span10"></div>
+  </div>
+    <div class="row-fluid">
+        <div class="span10">
+          <h2 style="text-align: left;">AWS</h2>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span3">
+            <h3>
+                <a href="https://www.lucidchart.com/documents/view/4f80-2688-52867fc4-9f64-2ac30a004b21">Service Bus</a>
+            </h3>
+        </div>
+        <div class="span7">
+          <p>
+            This example creates an enterprise service bus capable of publish/subscribe
+            using SQS, SNS, and SWF.  The type attribute of a message pushed onto
+            the service bus on-ramp is mapped to an SNS topic.
+            When a message is received, the subscribers to the SNS topic
+            are notified.  SWF workflow and activity workers are used to pull messages off the
+            service bus on-ramp queue and route them to their corresponding SNS topic.
+        </p>
+        </div>
+    </div>
+    <div class="row-fluid">
+      <div class="span10">
+        <h2 style="text-align: left;">DocuSign</h2>
+      </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span3"><h3><a href="/demos/docusign/embedded-signing/new">Embedded Signing</a></h3></div>
+        <div class="span7">
+          <p>
+            This demonstrates how to embed the signing of a document within
+            your own web application.  A URL for viewing and signing the document is created through
+            calls to the DocuSign API.  This URL is sent as a redirect to the client browser.
+            Once the signing process is complete, the client browser is redirected back to a URL
+            of your choosing.
+          </p>
+        </div>
+    </div>
 </div>

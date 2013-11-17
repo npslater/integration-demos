@@ -1,6 +1,9 @@
-/.bundle
+/ruby/integration-demos/.idea/
 /ruby/integration-demos-lib/.idea/
+/ruby/integration-demos-lib/.bundle
 /ruby/integration-demos-web/.idea/
+/ruby/integration-demos-web/.bundle
+
 
 /ruby/integration-demos-lib/projectFilesBackup/
 /ruby/integration-demos-web/projectFilesBackup/
